@@ -23,12 +23,15 @@
     <section class="w-full h-auto">
         <div id="home">
             <div class="w-full h-3/4">
-                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center ">
-                    <input type="search" class="outline-none p-3 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" name="" id="">
-                    <button class="w-48 bg-white rounded-full text-lg text-primary shadow-sm font-semibold p-4 transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110  ">Explorar</button>
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-28 lg:justify-start ">
+                    <input type="search" class="outline-none p-3 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" name="" id="">
+                    <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+                        <p class="text-4xl ml-16 font-bold text-black">Encuentra mas ubicaciones <br> como esta</p>
+                    </div>
+                    <button class="w-48 bg-white rounded-full text-lg text-primary shadow-sm font-semibold p-4 transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16">Explorar</button>
                 </div>
-                <div class="w-full h-full">
-                    <img src="./img/sanFrancisco.jpg" alt="San Francisco City">
+                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                    <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="San Francisco City">
                 </div>
             </div>
         </div>
@@ -99,14 +102,14 @@
                     </div>
                 </div>
                 <div class="Card">
-                    <div class="w-full h-3/5 rounded-t-lg bg-europe bg-cover"></div>
+                    <div class="w-full h-3/5 rounded-t-lg bg-europe bg-cover bg-center"></div>
                     <div class="w-full h-2/5 bg-white rounded-b-lg">
                         <p class="text-tertiary font-bold text-xl px-4 py-2">Europe</p>
                         <p class="text-tertiary px-4">El viejo continente</p>
                     </div>
                 </div>
                 <div class="Card">
-                    <div class="w-full h-3/5 rounded-t-lg bg-sydney bg-cover"></div>
+                    <div class="w-full h-3/5 rounded-t-lg bg-sydney bg-cover bg-center"></div>
                     <div class="w-full h-2/5 bg-secondary rounded-b-lg">
                         <p class="text-white font-bold text-xl px-4 py-2">Sydney</p>
                         <p class="text-white px-4">Playas increibles</p>
@@ -171,7 +174,7 @@
         <p class="text-sm text-gray-400">Términos y condiciones</p>
         <p class="text-sm text-gray-400">Platzi Travel, Inc.</p>
     </footer>
-    <div id="tab_bar"class="w-full h-12 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0">
+    <div id="tab_bar"class="w-full h-12 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0 lg:hidden">
         <a href="#home">
             <i class="fa-solid fa-house text-xl text-gray-300"></i>
         </a>
@@ -188,6 +191,5 @@
             <i class="fa-solid fa-moon text-xl text-gray-300"></i>
         </button>
     </div>
-</body>
 </body>
 </html>
