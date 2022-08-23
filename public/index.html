@@ -18,10 +18,33 @@
     <title>Platzi Travel</title>
 </head>
 <body class="font-Montserrat">
-    <nav></nav>
+    <nav class="w-full h-14 hidden bg-white lg:flex lg:fixed lg:z-10 p-4 justify-between border-b-4 border-cyan-600">
+        <div class="h-auto w-auto">
+            <p class="text-xl text-primary font-black">Platzi Travel</p>
+        </div>
+
+        <div class="flex space-x-8">
+            <a class="nav-items" href="#home">Inicio</a>
+            <a class="nav-items" href="#recomendados">Recomendados</a>
+            <a class="nav-items" href="#rentas_destacadas">Rentas</a>
+            <a class="nav-items" href="#faqs">FAQs</a>
+            <a class="nav-items" href="#footer">Sobre nosotros</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="">
+                <i class="nav-icons fa-search fa-solid"></i>
+            </a>
+            <a href="">
+                <i class="nav-icons fa-moon fa-solid"></i>
+            </a>
+            <a href="./registrationForm.html">
+                <i class="nav-icons fa-user fa-solid"></i>
+            </a>
+        </div>
+    </nav>
     <div id="tab_bar"></div>
     <section class="w-full h-auto">
-        <div id="home">
+        <div class="w-full h-full" id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-28 lg:justify-start ">
                     <input type="search" class="outline-none p-3 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" name="" id="">
@@ -175,7 +198,7 @@
             </div>
         </div>
     </section>
-    <footer class="w-full h-auto bg-gray-100 px-6 space-y-2 mt-6 pt-4 mb-18 pb-16 lg:pb-4">
+    <footer id="footer" class="w-full h-auto bg-gray-100 px-6 space-y-2 mt-6 pt-4 mb-18 pb-16 lg:pb-4">
         <p class="text-lg">Acerca De</p>
         <p class="text-sm text-gray-400">Inversionistas</p>
         <p class="text-sm text-gray-400">Empleos</p>

@@ -8,3 +8,10 @@
 .CardTitle {
     @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
 }
+.nav-items {
+    @apply font-bold text-base text-primary
+}
+
+.nav-icons{
+    @apply text-base text-primary
+}
