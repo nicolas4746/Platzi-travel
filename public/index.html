@@ -10,15 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Platzi Travel</title>
 </head>
-<body>
+<body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
     <section class="w-full h-screen">
         <div id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center ">
-                    <input type="search" class="outline-none p-3 rounded-full shadow-sm text-center" placeholder="San Francisco" name="" id="">
-                    <button class="w-36 bg-white rounded-full text-xl text-primary shadow-sm font-semibold p-4 ">Explorar</button>
+                    <input type="search" class="outline-none p-3 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" name="" id="">
+                    <button class="w-48 bg-white rounded-full text-lg text-primary shadow-sm font-semibold p-4 transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110  ">Explorar</button>
                 </div>
                 <div class="w-full h-full">
                     <img src="./img/sanFrancisco.jpg" alt="San Francisco City">
@@ -27,7 +27,7 @@
         </div>
         <div class="p-6" id="recomendados">
             <p class="text-3xl font-semibold text-primary ">Recomendados</p>
-            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide">
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide overflow-y-hidden">
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
                     <div class="w-full h-2/5 bg-secondary rounded-b-lg">
@@ -40,6 +40,76 @@
                     <div class="w-full h-2/5 bg-white rounded-b-lg">
                         <p class="text-tertiary font-bold text-xl px-4 py-2">New York</p>
                         <p class="text-tertiary px-4">La gran manzana</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                        <p class="text-white font-bold text-xl px-4 py-2">Yosemite</p>
+                        <p class="text-white px-4">Un descanso del mundo</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2">Seattle</p>
+                        <p class="text-tertiary px-4">Gran ciudad</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                        <p class="text-white font-bold text-xl px-4 py-2">Suiza</p>
+                        <p class="text-white px-4">Paisajes que enamoran</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-LA bg-cover"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2">Los Angeles</p>
+                        <p class="text-tertiary px-4">Hollywood</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-miami bg-cover"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                        <p class="text-white font-bold text-xl px-4 py-2">Miami</p>
+                        <p class="text-white px-4">La ciudad del sol</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-bali bg-cover"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2">Bali</p>
+                        <p class="text-tertiary px-4">Paradisiaco</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-chicago bg-cover"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                        <p class="text-white font-bold text-xl px-4 py-2">Chicago</p>
+                        <p class="text-white px-4">La ciudad de los vientos</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-europe bg-cover"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2">Europe</p>
+                        <p class="text-tertiary px-4">El viejo continente</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-sydney bg-cover"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                        <p class="text-white font-bold text-xl px-4 py-2">Sydney</p>
+                        <p class="text-white px-4">Playas increibles</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-iceland bg-cover"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2">Iceland</p>
+                        <p class="text-tertiary px-4">Volcanes, geiseres y mas!</p>
                     </div>
                 </div>
             </div>    
