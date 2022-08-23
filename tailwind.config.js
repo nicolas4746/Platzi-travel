@@ -10,7 +10,8 @@ module.exports = {
         'gray-300': '#d1d5db',
         'gray-200': '#e5e7eb',
         'gray-100': '#f3f4f6',
-        'gray-400': '#9ca3af'
+        'gray-400': '#9ca3af',
+        'black': '#000000',
       }, 
       fontFamily: { 
         Montserrat: ["Montserrat", "sans-serif"],
