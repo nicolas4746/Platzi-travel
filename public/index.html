@@ -8,12 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Platzi Travel</title>
 </head>
 <body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
-    <section class="w-full h-screen">
+    <section class="w-full h-auto">
         <div id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center ">
@@ -157,7 +164,30 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer class="w-full h-auto bg-gray-100 px-6 space-y-2 mt-6 pt-4 mb-18 pb-16">
+        <p class="text-lg">Acerca De</p>
+        <p class="text-sm text-gray-400">Inversionistas</p>
+        <p class="text-sm text-gray-400">Empleos</p>
+        <p class="text-sm text-gray-400">Términos y condiciones</p>
+        <p class="text-sm text-gray-400">Platzi Travel, Inc.</p>
+    </footer>
+    <div id="tab_bar"class="w-full h-12 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0">
+        <a href="#home">
+            <i class="fa-solid fa-house text-xl text-gray-300"></i>
+        </a>
+        <a href="#recomendados">
+            <i class="fa-solid fa-magnifying-glass text-xl text-primary"></i>
+        </a>
+        <a href="#rentas_destacadas">
+            <i class="fa-solid fa-heart text-xl text-gray-300"></i>
+        </a>
+        <a href="#faqs">
+            <i class="fa-solid fa-user text-xl text-gray-300"></i>
+        </a>
+        <button>
+            <i class="fa-solid fa-moon text-xl text-gray-300"></i>
+        </button>
+    </div>
 </body>
 </body>
 </html>

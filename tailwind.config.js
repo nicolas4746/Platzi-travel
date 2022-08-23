@@ -5,7 +5,12 @@ module.exports = {
         'primary':"#CC2D4A",
         'secondary':"#8FA206",
         'tertiary':"#61AEC9",
-        'white':"#FFFFFF"
+        'white':"#FFFFFF",
+        'gray-50': '#f9fafb',
+        'gray-300': '#d1d5db',
+        'gray-200': '#e5e7eb',
+        'gray-100': '#f3f4f6',
+        'gray-400': '#9ca3af'
       }, 
       fontFamily: { 
         Montserrat: ["Montserrat", "sans-serif"],
