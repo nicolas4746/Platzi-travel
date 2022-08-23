@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,28 +17,28 @@
     />
     <title>Platzi Travel</title>
 </head>
-<body class="font-Montserrat">
-    <nav class="w-full h-14 hidden bg-white lg:flex lg:fixed lg:z-10 p-4 justify-between border-b-4 border-cyan-600">
+<body class="font-Montserrat dark:bg-gray-900">
+    <nav class="w-full h-14 hidden bg-white lg:flex lg:fixed lg:z-10 p-4 justify-between border-b-4 border-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-800">
         <div class="h-auto w-auto">
-            <p class="text-xl text-primary font-black">Platzi Travel</p>
+            <p class="text-xl text-primary font-black dark:text-white">Platzi Travel</p>
         </div>
 
         <div class="flex space-x-8">
-            <a class="nav-items" href="#home">Inicio</a>
-            <a class="nav-items" href="#recomendados">Recomendados</a>
-            <a class="nav-items" href="#rentas_destacadas">Rentas</a>
-            <a class="nav-items" href="#faqs">FAQs</a>
-            <a class="nav-items" href="#footer">Sobre nosotros</a>
+            <a class="nav-items dark:text-white" href="#home">Inicio</a>
+            <a class="nav-items dark:text-white" href="#recomendados">Recomendados</a>
+            <a class="nav-items dark:text-white" href="#rentas_destacadas">Rentas</a>
+            <a class="nav-items dark:text-white" href="#faqs">FAQs</a>
+            <a class="nav-items dark:text-white" href="#footer">Sobre nosotros</a>
         </div>
         <div class="flex space-x-4">
             <a href="">
-                <i class="nav-icons fa-search fa-solid"></i>
+                <i class="nav-icons fa-search fa-solid dark:text-white"></i>
             </a>
-            <a href="">
-                <i class="nav-icons fa-moon fa-solid"></i>
-            </a>
+            <button id="toggle"> 
+                <i class="nav-icons fa-moon fa-solid dark:text-white"></i>
+            </button>
             <a href="./registrationForm.html">
-                <i class="nav-icons fa-user fa-solid"></i>
+                <i class="nav-icons fa-user fa-solid dark:text-white"></i>
             </a>
         </div>
     </nav>
@@ -59,96 +59,96 @@
             </div>
         </div>
         <div class="p-6" id="recomendados">
-            <p class="text-3xl font-semibold text-primary ">Recomendados</p>
+            <p class="text-3xl font-semibold text-primary dark:text-white">Recomendados</p>
             <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide overflow-y-hidden">
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white font-bold text-xl px-4 py-2">Norway</p>
                         <p class="text-white px-4">Paisajes Increíbles</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-tertiary font-bold text-xl px-4 py-2">New York</p>
-                        <p class="text-tertiary px-4">La gran manzana</p>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2 dark:text-white">New York</p>
+                        <p class="text-tertiary px-4 dark:text-white">La gran manzana</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white font-bold text-xl px-4 py-2">Yosemite</p>
                         <p class="text-white px-4">Un descanso del mundo</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-tertiary font-bold text-xl px-4 py-2">Seattle</p>
-                        <p class="text-tertiary px-4">Gran ciudad</p>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2 dark:text-white">Seattle</p>
+                        <p class="text-tertiary px-4 dark:text-white">Gran ciudad</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white font-bold text-xl px-4 py-2">Suiza</p>
                         <p class="text-white px-4">Paisajes que enamoran</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-LA bg-cover"></div>
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-tertiary font-bold text-xl px-4 py-2">Los Angeles</p>
-                        <p class="text-tertiary px-4">Hollywood</p>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2 dark:text-white">Los Angeles</p>
+                        <p class="text-tertiary px-4 dark:text-white">Hollywood</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-miami bg-cover"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white font-bold text-xl px-4 py-2">Miami</p>
                         <p class="text-white px-4">La ciudad del sol</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-bali bg-cover"></div>
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-tertiary font-bold text-xl px-4 py-2">Bali</p>
-                        <p class="text-tertiary px-4">Paradisiaco</p>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2 dark:text-white">Bali</p>
+                        <p class="text-tertiary px-4 dark:text-white">Paradisiaco</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-chicago bg-cover"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white font-bold text-xl px-4 py-2">Chicago</p>
                         <p class="text-white px-4">La ciudad de los vientos</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-europe bg-cover bg-center"></div>
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-tertiary font-bold text-xl px-4 py-2">Europe</p>
-                        <p class="text-tertiary px-4">El viejo continente</p>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2 dark:text-white">Europe</p>
+                        <p class="text-tertiary px-4 dark:text-white">El viejo continente</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-sydney bg-cover bg-center"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white font-bold text-xl px-4 py-2">Sydney</p>
                         <p class="text-white px-4">Playas increibles</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-iceland bg-cover"></div>
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-tertiary font-bold text-xl px-4 py-2">Iceland</p>
-                        <p class="text-tertiary px-4">Volcanes, geiseres y mas!</p>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-tertiary font-bold text-xl px-4 py-2 dark:text-white">Iceland</p>
+                        <p class="text-tertiary px-4 dark:text-white">Volcanes, geiseres y mas!</p>
                     </div>
                 </div>
             </div>    
         </div>
         <div class="px-6 w-auto lg:px-6" id="rentas_destacadas">
-            <p class="text-3xl text-primary font-semibold pb-6 mt-2">Rentas destacadas</p>
+            <p class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white">Rentas destacadas</p>
             <div class="w-full h-full flex flex-col items-center justify-center">
                 <div class="w-full h-96 bg-chicago bg-cover rounded-xl mb-6 lg:bg-center">
                     <p class="CardTitle lg:text-b lg:text-black">Chicago</p>
@@ -174,38 +174,38 @@
         </div>
         <div class="w-full h-full px-6" id="faqs">
             <div class="w-full h-full flex flex-col space-y-4">
-                <p class="text-3xl text-primary font-semibold mt-6">FAQs</p>
+                <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQs</p>
                 <div>
-                    <p class="text-xl font-semibold text-primary">Política de Cancelación</p>
-                    <p class="font-medium pt-2">Para estancias menores a una semana es importante avisar con 3 días de anticipación, de caso contario será sancionado.</p>
+                    <p class="text-xl font-semibold text-primary dark:text-white">Política de Cancelación</p>
+                    <p class="font-medium pt-2 dark:text-white">Para estancias menores a una semana es importante avisar con 3 días de anticipación, de caso contario será sancionado.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-semibold text-primary">Métodos de pago</p>
-                    <p class="font-medium pt-2">Aceptamos distintos métodos de pago: VISA, MasterCard, American Express, Paypal y Binance.</p>
+                    <p class="text-xl font-semibold text-primary dark:text-white">Métodos de pago</p>
+                    <p class="font-medium pt-2 dark:text-white">Aceptamos distintos métodos de pago: VISA, MasterCard, American Express, Paypal y Binance.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-semibold text-primary">Mascotas</p>
-                    <p class="font-medium pt-2">El tema de las mascotas dependerá directamente del anfitrión.</p>
+                    <p class="text-xl font-semibold text-primary dark:text-white">Mascotas</p>
+                    <p class="font-medium pt-2 dark:text-white">El tema de las mascotas dependerá directamente del anfitrión.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-semibold text-primary">Información de Seguridad</p>
-                    <p class="font-medium pt-2">Todas nuestras estancias cuentan con seguro en caso de accidentes.</p>
+                    <p class="text-xl font-semibold text-primary dark:text-white">Información de Seguridad</p>
+                    <p class="font-medium pt-2 dark:text-white">Todas nuestras estancias cuentan con seguro en caso de accidentes.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-semibold text-primary">Estancias Largas</p>
-                    <p class="font-medium pt-2">Contamos con estancias de hasta 3 meses, en este caso es requerido un anticipo con un monto del 50% del valor de la renta.</p>
+                    <p class="text-xl font-semibold text-primary dark:text-white">Estancias Largas</p>
+                    <p class="font-medium pt-2 dark:text-white">Contamos con estancias de hasta 3 meses, en este caso es requerido un anticipo con un monto del 50% del valor de la renta.</p>
                 </div>
             </div>
         </div>
+        <footer id="footer" class="w-full h-auto bg-gray-100 px-6 space-y-2 mt-6 pt-4 mb-18 pb-16 lg:pb-4">
+            <p class="text-lg">Acerca De</p>
+            <p class="text-sm text-gray-400">Inversionistas</p>
+            <p class="text-sm text-gray-400">Empleos</p>
+            <p class="text-sm text-gray-400">Términos y condiciones</p>
+            <p class="text-sm text-gray-400">Platzi Travel, Inc.</p>
+        </footer>
     </section>
-    <footer id="footer" class="w-full h-auto bg-gray-100 px-6 space-y-2 mt-6 pt-4 mb-18 pb-16 lg:pb-4">
-        <p class="text-lg">Acerca De</p>
-        <p class="text-sm text-gray-400">Inversionistas</p>
-        <p class="text-sm text-gray-400">Empleos</p>
-        <p class="text-sm text-gray-400">Términos y condiciones</p>
-        <p class="text-sm text-gray-400">Platzi Travel, Inc.</p>
-    </footer>
-    <div id="tab_bar"class="w-full h-12 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0 lg:hidden">
+    <div id="tab_bar"class="w-full h-12 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0 lg:hidden dark:bg-gray-700">
         <a href="#home">
             <i class="fa-solid fa-house text-xl text-gray-300"></i>
         </a>
@@ -218,9 +218,24 @@
         <a href="#faqs">
             <i class="fa-solid fa-user text-xl text-gray-300"></i>
         </a>
-        <button>
+        <button id="toggle-sm">
             <i class="fa-solid fa-moon text-xl text-gray-300"></i>
         </button>
     </div>
+    <script>
+        const htmlElement = document.querySelector('html');
+        const toggleButton = document.querySelector('#toggle');
+        const toggleButtonSm = document.querySelector('#toggle-sm');
+ 
+        toggleButton.addEventListener ('click', () => toggleDarkMode());
+        toggleButtonSm.addEventListener ('click', () => toggleDarkMode());
+
+        const toggleDarkMode = () => {
+            htmlElement.classList.contains('dark')?
+            htmlElement.classList.remove('dark') :
+            htmlElement.classList.add('dark');
+        }
+
+    </script>
 </body>
 </html>
